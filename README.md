@@ -1,3 +1,1 @@
 # Earthquake-Prediction
-
-Author: VAISHNAVI
