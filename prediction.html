@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Earthquake Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+  </head>
+  <body>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <video autoplay muted loop id="bgVideo">
+      <source src={{ url_for('static', filename="Earthquake.mp4") }} type="video/mp4">
+    </video>
+    <div class="container" style="height:25rem;">
+        <h3>The chances of Earthquake according to Predicted Result is:</h3>
+        
+        <div class="input-section">
+            
+      
+            <h4 style="position: relative;color:darkblue;font-weight:bold;">The expected intensity at Richter magnitude at the Provided Coordinates is about :</h4>
+            <h2>{{ p }}</h2>
+
+            <h3 style="color:#3792cb;">The Location is at:
+              <span>{{ q }}</span> Risk!</h3>
+            <div class="predict" style="text-align: center;">
+                <button style="font-size:1rem;margin-top:20px;" type="button" class="btn btn-primary" onclick="home()">Predict Again</button>
+                <button style="font-size:1rem;margin-top:70px;" type="button" class="btn btn-primary" onclick="damage()">For other details</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+      function home()
+      {
+        location.replace("/");
+      }
+      function damage()
+      {
+        location.replace("/damage")
+      }
+    </script>
+  </body>
+</html>

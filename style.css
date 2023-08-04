@@ -1,0 +1,94 @@
+body{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100vh;
+    /*animation:animate 16s ease-in-out infinite;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  /*
+@keyframes animate{
+    0%,100%{
+        background-image: url("images/earthquake.gif");
+    }
+    25%{
+        background-image: url("images/earthquake1.gif");
+    }
+    50%{
+        background-image: url("images/earthquake2.gif");
+    }
+    75%{
+        background-image: url("images/earthquake3.gif");
+    }
+}*/
+
+.container{
+    width:40rem;
+    height:32rem;
+    background-color: transparent;
+    margin-top:7rem;
+    border-radius:20px;
+    background-color: lightgray;
+    text-align: center;
+    position:relative;
+    
+}
+.container h3,h2{
+    font-weight:bold;
+    color: darkred;
+  position:relative;
+  
+}
+
+.container h3,span{
+    position:relative;
+}
+.container span{
+    color:darkred;
+}
+
+.input-section{
+    margin-top:40px;
+}
+.input-section p{
+    font-weight:bold;
+    color: #3792cb;
+    display:block;
+    position:relative;
+    font-size:1.2rem;
+}
+.input-group{
+    margin:0% 10%;
+    width:80%;
+    
+}
+.input-section button{
+    width:32%;
+    position:absolute;
+    text-align: center;
+   margin-left:-6rem;
+}
+.input-section button:hover{
+    transform:scale(0.9,0.9);
+    opacity:0.8;
+}
+.input-group input,.input-group input:focus{
+    border-color: #3792cb;
+    background-color: transparent;
+}
+.input-group span{
+    border-color: #3792cb;
+    background-color: transparent;
+    color:darkviolet;
+    font-size:1.2rem;
+    font-weight:bold;
+}
